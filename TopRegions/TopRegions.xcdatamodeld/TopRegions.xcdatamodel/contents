@@ -8,8 +8,8 @@
     </entity>
     <entity name="Regions" representedClassName="Regions" syncable="YES">
         <attribute name="regionId" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="regionLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="regionLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="regionLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionLongitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="regionName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="whoTakeHere" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photographers" inverseName="locateTo" inverseEntity="Photographers" syncable="YES"/>
     </entity>

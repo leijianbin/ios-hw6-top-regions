@@ -10,6 +10,6 @@
 
 @interface Regions (Create)
 
-+ (Regions *)regionsWithFlickrInfo:(NSString *)placeId
++ (Regions *)regionsWithFlickrInfo:(NSDictionary *)placeInfo
             inManagedObjectContect:(NSManagedObjectContext *)context;
 @end

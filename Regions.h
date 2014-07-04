@@ -2,7 +2,7 @@
 //  Regions.h
 //  TopRegions
 //
-//  Created by Jianbin Lei on 7/3/14.
+//  Created by Jianbin Lei on 7/4/14.
 //  Copyright (c) 2014 ou. All rights reserved.
 //
 
@@ -14,8 +14,8 @@
 @interface Regions : NSManagedObject
 
 @property (nonatomic, retain) NSString * regionId;
-@property (nonatomic, retain) NSNumber * regionLatitude;
-@property (nonatomic, retain) NSNumber * regionLongitude;
+@property (nonatomic, retain) NSString * regionLatitude;
+@property (nonatomic, retain) NSString * regionLongitude;
 @property (nonatomic, retain) NSString * regionName;
 @property (nonatomic, retain) NSSet *whoTakeHere;
 @end

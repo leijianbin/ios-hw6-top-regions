@@ -10,12 +10,15 @@
 
 @implementation Regions (Create)
 
-+ (Regions *)regionsWithFlickrInfo:(NSString *)placeId
++ (Regions *)regionsWithFlickrInfo:(NSDictionary *)placeInfo
                         inManagedObjectContect:(NSManagedObjectContext *)context
 {
     Regions *regions = nil;
 
-    NSString *placeUnique = placeId;
+    NSString *placeUnique = placeInfo[@"place_id"];
+    NSString *placeLatitude = placeInfo[@"latitude"];
+    NSString *placeLongitude = placeInfo[@"longitude"];
+
     
     //database query
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Regions"];
@@ -34,6 +37,8 @@
     {
         regions = [NSEntityDescription insertNewObjectForEntityForName:@"Regions" inManagedObjectContext: context];
         regions.regionId = placeUnique;
+        regions.regionLatitude = placeLatitude;
+        regions.regionLongitude = placeLongitude;
         
 #warning - need get the place name with the place_id;
         regions.regionName = @"Unkonw";

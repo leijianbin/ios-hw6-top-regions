@@ -26,7 +26,8 @@
     
     //database query
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Photographers"];
-    request.predicate = [NSPredicate predicateWithFormat:@"regionId = %@ AND photographerId = %@",ownerUnique, placeUnique];
+    request.predicate = [NSPredicate predicateWithFormat:@"(regionId = %@) AND (photographerId = %@)",placeUnique, ownerUnique];
+    
     
     NSError *error;
     NSArray *matches = [context executeFetchRequest:request error:&error];
@@ -43,9 +44,10 @@
         photographers.photographerId = ownerUnique;
         photographers.regionId = placeUnique;
         photographers.photographerName = photoDictionary[OWNER_NAME];
-        photographers.locateTo = [Regions regionsWithFlickrInfo:placeUnique
+        photographers.locateTo = [Regions regionsWithFlickrInfo:photoDictionary
                                          inManagedObjectContect:context];
     }
+
     return photographers;
 }
 
@@ -55,6 +57,7 @@
 {
     for (NSDictionary *photo in photos) {
         [self photographersWithFlickrInfo:photo inManagedObjectContect:context];
+        NSLog(@"photo is %@",photo);
     }
 }
 
