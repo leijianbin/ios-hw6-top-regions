@@ -7,6 +7,13 @@
 //
 
 #import "TopRegionsAppDelegate.h"
+#import "FlickrFetcher.h"   
+#import "Photographers+Flickr.h"
+
+@interface TopRegionsAppDelegate() <NSURLSessionDataDelegate>
+
+@end
+
 
 @implementation TopRegionsAppDelegate
 

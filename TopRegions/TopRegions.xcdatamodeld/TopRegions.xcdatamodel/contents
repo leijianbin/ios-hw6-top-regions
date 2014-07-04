@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Photographers" representedClassName="Photographers" syncable="YES">
+        <attribute name="photographerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photographerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locateTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Regions" inverseName="whoTakeHere" inverseEntity="Regions" syncable="YES"/>
+    </entity>
+    <entity name="Regions" representedClassName="Regions" syncable="YES">
+        <attribute name="regionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="regionLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="regionName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whoTakeHere" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photographers" inverseName="locateTo" inverseEntity="Photographers" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Regions" positionX="-45" positionY="-22" width="128" height="118"/>
+        <element name="Photographers" positionX="180" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>
