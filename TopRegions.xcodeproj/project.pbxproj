@@ -12,6 +12,10 @@
 		902D37BC196617A700F57E0B /* Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37BB196617A700F57E0B /* Regions.m */; };
 		902D37BF1966183800F57E0B /* Photographers+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37BE1966183800F57E0B /* Photographers+Flickr.m */; };
 		902D37C21966247A00F57E0B /* Regions+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37C11966247A00F57E0B /* Regions+Create.m */; };
+		902D37CB1967105C00F57E0B /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37C41967105C00F57E0B /* CoreDataTableViewController.m */; };
+		902D37CC1967105C00F57E0B /* FlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37C61967105C00F57E0B /* FlickerPhotosTVC.m */; };
+		902D37CD1967105C00F57E0B /* FlickerPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37C81967105C00F57E0B /* FlickerPlacesTVC.m */; };
+		902D37CE1967105C00F57E0B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 902D37CA1967105C00F57E0B /* ImageViewController.m */; };
 		90C3AB41195B2C6700E1E321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3AB40195B2C6700E1E321 /* Foundation.framework */; };
 		90C3AB43195B2C6700E1E321 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3AB42195B2C6700E1E321 /* CoreGraphics.framework */; };
 		90C3AB45195B2C6700E1E321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3AB44195B2C6700E1E321 /* UIKit.framework */; };
@@ -26,12 +30,8 @@
 		90C3AB65195B2C6700E1E321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3AB44195B2C6700E1E321 /* UIKit.framework */; };
 		90C3AB6D195B2C6700E1E321 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C3AB6B195B2C6700E1E321 /* InfoPlist.strings */; };
 		90C3AB6F195B2C6700E1E321 /* TopRegionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB6E195B2C6700E1E321 /* TopRegionsTests.m */; };
-		90C3AB7E195B2D8000E1E321 /* FlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB7B195B2D8000E1E321 /* FlickerPhotosTVC.m */; };
-		90C3AB7F195B2D8000E1E321 /* FlickerPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB7D195B2D8000E1E321 /* FlickerPlacesTVC.m */; };
 		90C3AB82195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB81195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.m */; };
 		90C3AB87195B2EAD00E1E321 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB86195B2EAD00E1E321 /* FlickrFetcher.m */; };
-		90C3AB8A195B32BE00E1E321 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB89195B32BE00E1E321 /* CoreDataTableViewController.m */; };
-		90C3AB8D195B356200E1E321 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB8C195B356200E1E321 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,14 @@
 		902D37BE1966183800F57E0B /* Photographers+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographers+Flickr.m"; sourceTree = "<group>"; };
 		902D37C01966247900F57E0B /* Regions+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Regions+Create.h"; sourceTree = "<group>"; };
 		902D37C11966247A00F57E0B /* Regions+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Regions+Create.m"; sourceTree = "<group>"; };
+		902D37C31967105C00F57E0B /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = TopRegions/Controller/CoreDataTableViewController.h; sourceTree = "<group>"; };
+		902D37C41967105C00F57E0B /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = TopRegions/Controller/CoreDataTableViewController.m; sourceTree = "<group>"; };
+		902D37C51967105C00F57E0B /* FlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickerPhotosTVC.h; path = TopRegions/Controller/FlickerPhotosTVC.h; sourceTree = "<group>"; };
+		902D37C61967105C00F57E0B /* FlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickerPhotosTVC.m; path = TopRegions/Controller/FlickerPhotosTVC.m; sourceTree = "<group>"; };
+		902D37C71967105C00F57E0B /* FlickerPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickerPlacesTVC.h; path = TopRegions/Controller/FlickerPlacesTVC.h; sourceTree = "<group>"; };
+		902D37C81967105C00F57E0B /* FlickerPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickerPlacesTVC.m; path = TopRegions/Controller/FlickerPlacesTVC.m; sourceTree = "<group>"; };
+		902D37C91967105C00F57E0B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = TopRegions/Controller/ImageViewController.h; sourceTree = "<group>"; };
+		902D37CA1967105C00F57E0B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = TopRegions/Controller/ImageViewController.m; sourceTree = "<group>"; };
 		90C3AB3D195B2C6700E1E321 /* TopRegions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopRegions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C3AB40195B2C6700E1E321 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90C3AB42195B2C6700E1E321 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,19 +80,11 @@
 		90C3AB6A195B2C6700E1E321 /* TopRegionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopRegionsTests-Info.plist"; sourceTree = "<group>"; };
 		90C3AB6C195B2C6700E1E321 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90C3AB6E195B2C6700E1E321 /* TopRegionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopRegionsTests.m; sourceTree = "<group>"; };
-		90C3AB7A195B2D8000E1E321 /* FlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickerPhotosTVC.h; path = ../EnhanceTopPlace/TopPlace/Controller/FlickerPhotosTVC.h; sourceTree = "<group>"; };
-		90C3AB7B195B2D8000E1E321 /* FlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickerPhotosTVC.m; path = ../EnhanceTopPlace/TopPlace/Controller/FlickerPhotosTVC.m; sourceTree = "<group>"; };
-		90C3AB7C195B2D8000E1E321 /* FlickerPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickerPlacesTVC.h; path = ../EnhanceTopPlace/TopPlace/Controller/FlickerPlacesTVC.h; sourceTree = "<group>"; };
-		90C3AB7D195B2D8000E1E321 /* FlickerPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickerPlacesTVC.m; path = ../EnhanceTopPlace/TopPlace/Controller/FlickerPlacesTVC.m; sourceTree = "<group>"; };
 		90C3AB80195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentGeoreferencedPhotosTVC.h; path = TopRegions/Controller/RecentGeoreferencedPhotosTVC.h; sourceTree = "<group>"; };
 		90C3AB81195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentGeoreferencedPhotosTVC.m; path = TopRegions/Controller/RecentGeoreferencedPhotosTVC.m; sourceTree = "<group>"; };
 		90C3AB84195B2EAD00E1E321 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		90C3AB85195B2EAD00E1E321 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		90C3AB86195B2EAD00E1E321 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
-		90C3AB88195B32BE00E1E321 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = "../../../../Volumes/LeiJianbin/Users/jianbinlei/Downloads/chrome download/CoreDataTableViewController/CoreDataTableViewController.h"; sourceTree = "<group>"; };
-		90C3AB89195B32BE00E1E321 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = "../../../../Volumes/LeiJianbin/Users/jianbinlei/Downloads/chrome download/CoreDataTableViewController/CoreDataTableViewController.m"; sourceTree = "<group>"; };
-		90C3AB8B195B356200E1E321 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../EnhanceTopPlace/TopPlace/Controller/ImageViewController.h; sourceTree = "<group>"; };
-		90C3AB8C195B356200E1E321 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../EnhanceTopPlace/TopPlace/Controller/ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,14 +205,14 @@
 		90C3AB79195B2C8C00E1E321 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				90C3AB8B195B356200E1E321 /* ImageViewController.h */,
-				90C3AB8C195B356200E1E321 /* ImageViewController.m */,
-				90C3AB88195B32BE00E1E321 /* CoreDataTableViewController.h */,
-				90C3AB89195B32BE00E1E321 /* CoreDataTableViewController.m */,
-				90C3AB7A195B2D8000E1E321 /* FlickerPhotosTVC.h */,
-				90C3AB7B195B2D8000E1E321 /* FlickerPhotosTVC.m */,
-				90C3AB7C195B2D8000E1E321 /* FlickerPlacesTVC.h */,
-				90C3AB7D195B2D8000E1E321 /* FlickerPlacesTVC.m */,
+				902D37C31967105C00F57E0B /* CoreDataTableViewController.h */,
+				902D37C41967105C00F57E0B /* CoreDataTableViewController.m */,
+				902D37C51967105C00F57E0B /* FlickerPhotosTVC.h */,
+				902D37C61967105C00F57E0B /* FlickerPhotosTVC.m */,
+				902D37C71967105C00F57E0B /* FlickerPlacesTVC.h */,
+				902D37C81967105C00F57E0B /* FlickerPlacesTVC.m */,
+				902D37C91967105C00F57E0B /* ImageViewController.h */,
+				902D37CA1967105C00F57E0B /* ImageViewController.m */,
 				90C3AB80195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.h */,
 				90C3AB81195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.m */,
 			);
@@ -329,18 +329,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902D37CC1967105C00F57E0B /* FlickerPhotosTVC.m in Sources */,
 				90C3AB51195B2C6700E1E321 /* TopRegionsAppDelegate.m in Sources */,
 				902D37BF1966183800F57E0B /* Photographers+Flickr.m in Sources */,
-				90C3AB8A195B32BE00E1E321 /* CoreDataTableViewController.m in Sources */,
-				90C3AB8D195B356200E1E321 /* ImageViewController.m in Sources */,
 				90C3AB87195B2EAD00E1E321 /* FlickrFetcher.m in Sources */,
 				90C3AB82195B2E5700E1E321 /* RecentGeoreferencedPhotosTVC.m in Sources */,
+				902D37CE1967105C00F57E0B /* ImageViewController.m in Sources */,
+				902D37CB1967105C00F57E0B /* CoreDataTableViewController.m in Sources */,
 				90C3AB4D195B2C6700E1E321 /* main.m in Sources */,
-				90C3AB7F195B2D8000E1E321 /* FlickerPlacesTVC.m in Sources */,
 				902D37BC196617A700F57E0B /* Regions.m in Sources */,
 				902D37C21966247A00F57E0B /* Regions+Create.m in Sources */,
-				90C3AB7E195B2D8000E1E321 /* FlickerPhotosTVC.m in Sources */,
 				902D37AA196612FC00F57E0B /* TopRegions.xcdatamodeld in Sources */,
+				902D37CD1967105C00F57E0B /* FlickerPlacesTVC.m in Sources */,
 				902D37B9196617A600F57E0B /* Photographers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

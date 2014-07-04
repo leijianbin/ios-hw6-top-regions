@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self fetchPhotos];
+    [self fetchPhotos];
 }
 
 - (void)fetchPhotos
