@@ -12,4 +12,9 @@
 
 + (Regions *)regionsWithFlickrInfo:(NSDictionary *)placeInfo
             inManagedObjectContect:(NSManagedObjectContext *)context;
+
++ (Regions *)searchRegionsWithFlickrInfo:(NSDictionary *)placeInfo
+                  inManagedObjectContect:(NSManagedObjectContext *)context;
+
++ (NSString *)fetchPlaceInfo:(NSString *)placeID;
 @end

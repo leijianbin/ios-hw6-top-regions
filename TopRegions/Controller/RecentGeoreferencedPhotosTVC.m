@@ -19,6 +19,28 @@
 {
     [super viewDidLoad];
     //[self fetchPhotos];
+    [self fetchPlaceInfo:@"QWjzgjtTV7MWdsxqUg"];
+}
+
+
+- (void)fetchPlaceInfo:(NSString *)placeID;
+{
+    NSURL *url = [FlickrFetcher URLforInformationAboutPlace:placeID];
+    
+    //muti-thread
+    dispatch_queue_t fetchQ = dispatch_queue_create("flickr place info fetcher", NULL);
+    dispatch_async(fetchQ, ^{
+        NSData *jsonResult = [NSData dataWithContentsOfURL:url];
+        NSDictionary *propertyListResults = [NSJSONSerialization JSONObjectWithData:jsonResult
+                                                                            options:0
+                                                                              error:NULL];
+        NSLog(@"Flikr Place information Result = %@", propertyListResults);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //NSArray *photos = [propertyListResults valueForKeyPath:FLICKR_RESULTS_PHOTOS];
+            //self.photos = photos;
+        });
+    });
 }
 
 - (void)fetchPhotos

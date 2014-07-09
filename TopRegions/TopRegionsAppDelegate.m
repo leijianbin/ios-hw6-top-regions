@@ -10,6 +10,8 @@
 #import "FlickrFetcher.h"
 #import "Photographers+Flickr.h"
 #import "Photographers.h"
+#import "Photos+Flickr.h"
+#import "Photos.h"
 #import "TopRegionDatabaseAvailabilty.h"
 
 
@@ -18,7 +20,7 @@
 @property (strong,nonatomic) NSManagedObjectContext *topregionDatabaseContext;
 @property (strong,nonatomic) UIManagedDocument *document;
 @property (strong,nonatomic) NSArray *photos; //of Flickr Dictionary
-
+@property (strong,nonatomic) NSString *placeName; 
 
 
 @end
@@ -33,6 +35,7 @@
     [self startFetchPhoto];
     return YES;
 }
+
 
 - (void)startFetchPhoto
 {
@@ -50,6 +53,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *photos = [propertyListResults valueForKeyPath:FLICKR_RESULTS_PHOTOS];
             self.photos = photos;
+            //NSLog(@"%@",photos);
         });
     });
 }
@@ -65,6 +69,7 @@
         NSManagedObjectContext *context = self.topregionDatabaseContext;
         [context performBlock:^{
             [Photographers loadPhotographersWithFlickrArray:self.photos inManagedObjectContect:context];
+            [Photos loadPhotosWithFlickrArray:self.photos inManagedObjectContect:context];
             [context save:NULL];
         }];
     }

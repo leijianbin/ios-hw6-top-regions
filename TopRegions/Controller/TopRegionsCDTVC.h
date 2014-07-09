@@ -1,16 +1,15 @@
 //
-//  RecentGeoPhotosCDTVC.h
+//  TopRegionsCDTVC.h
 //  TopRegions
 //
-//  Created by Jianbin Lei on 7/4/14.
+//  Created by Jianbin Lei on 7/9/14.
 //  Copyright (c) 2014 ou. All rights reserved.
 //
 
 #import "CoreDataTableViewController.h"
 
-@interface RecentGeoPhotosCDTVC : CoreDataTableViewController
+@interface TopRegionsCDTVC : CoreDataTableViewController
 
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic,strong) NSString *regionId;
 
 @end

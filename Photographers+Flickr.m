@@ -38,6 +38,10 @@
     } else if([matches count])
     {
         photographers = [matches firstObject];
+//        photographers.locateTo.numberOfPhotographer = @([photographers.locateTo.numberOfPhotographer integerValue] + 1);
+//        if (![context save:&error]) {
+//            NSLog(@"Whoops");
+//        }
     } else
     {
         photographers = [NSEntityDescription insertNewObjectForEntityForName:@"Photographers" inManagedObjectContext: context];
